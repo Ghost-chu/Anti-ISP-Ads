@@ -1,4 +1,4 @@
-//Run script
+//你的站点URL
 const globalURL = ["foxres.cn","www.foxres.cn"];
 const globalProtocol = ["http","https"]; //如果你是强制HTTPS站，那么就设置为 ["https"]
 //祝下述Domain的所有人全家爆炸
@@ -12,8 +12,8 @@ const webhookURL = "./process_request.php"; //改成你自己站点的
 //下面的你就不用动了
 window.onload=function(){
     checkIframe();
-    checkProxy(globalURL,globalProtocol);
-    checkAds(globalAdsDomain);
+    checkProxy();
+    checkAds();
 }
 function checkIframe(){
     if (self !== top) {
